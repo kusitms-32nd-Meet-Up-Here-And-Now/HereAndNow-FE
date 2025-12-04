@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import Router from './routes/Router';
+import SplashScreen from '@common/SplashScreen';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface AppProps {
+  enableAuthCheck?: boolean; // 디버깅용: 인증 체크 활성화/비활성화 (기본값: true)
 }
 
-export default App
+function App({ enableAuthCheck = true }: AppProps) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const hasVisited = sessionStorage.getItem('hasVisited');
+
+    if (hasVisited) {
+      setIsLoading(false);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+      sessionStorage.setItem('hasVisited', 'true');
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return isLoading ? <SplashScreen /> : <Router enableAuthCheck={enableAuthCheck} />;
+}
+
+export default App;

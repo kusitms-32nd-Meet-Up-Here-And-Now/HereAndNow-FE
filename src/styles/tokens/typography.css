@@ -1,0 +1,283 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Font Families */
+  --font-suite: 'SUITE', sans-serif;
+  --font-pretendard:
+    'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  /* Titles (SUITE) */
+  --text-h1-size: 36px;
+  --text-h1-line-height: 46px;
+  --text-h1-spacing: -0.2px;
+  --text-h1-weight: 700;
+
+  --text-h2-size: 36px;
+  --text-h2-line-height: 46px;
+  --text-h2-spacing: -0.2px;
+  --text-h2-weight: 500;
+
+  --text-h3-size: 32px;
+  --text-h3-line-height: 44px;
+  --text-h3-spacing: -0.2px;
+  --text-h3-weight: 700;
+
+  --text-h4-size: 28px;
+  --text-h4-line-height: 38px;
+  --text-h4-spacing: -0.2px;
+  --text-h4-weight: 700;
+
+  --text-h5-size: 24px;
+  --text-h5-line-height: 36px;
+  --text-h5-spacing: -0.2px;
+  --text-h5-weight: 500;
+
+  /* Subtitles (Pretendard) */
+  --text-s1-size: 20px;
+  --text-s1-line-height: 24px;
+  --text-s1-spacing: -0.2px;
+  --text-s1-weight: 700;
+
+  --text-s2-size: 20px;
+  --text-s2-line-height: 24px;
+  --text-s2-spacing: -0.2px;
+  --text-s2-weight: 500;
+
+  --text-s3-size: 18px;
+  --text-s3-line-height: 22px;
+  --text-s3-spacing: -0.2px;
+  --text-s3-weight: 700;
+
+  --text-s4-size: 18px;
+  --text-s4-line-height: 22px;
+  --text-s4-spacing: -0.2px;
+  --text-s4-weight: 600;
+
+  --text-s5-size: 18px;
+  --text-s5-line-height: 22px;
+  --text-s5-spacing: -0.2px;
+  --text-s5-weight: 500;
+
+  --text-s6-size: 16px;
+  --text-s6-line-height: 20px;
+  --text-s6-spacing: -0.2px;
+  --text-s6-weight: 600;
+
+  /* Body (Pretendard) */
+  --text-b1-size: 20px;
+  --text-b1-line-height: 30px;
+  --text-b1-spacing: -0.2px;
+  --text-b1-weight: 500;
+
+  --text-b2-size: 20px;
+  --text-b2-line-height: 30px;
+  --text-b2-spacing: -0.2px;
+  --text-b2-weight: 400;
+
+  --text-b3-size: 18px;
+  --text-b3-line-height: 28px;
+  --text-b3-spacing: -0.2px;
+  --text-b3-weight: 500;
+
+  --text-b4-size: 16px;
+  --text-b4-line-height: 24px;
+  --text-b4-spacing: -0.2px;
+  --text-b4-weight: 400;
+
+  --text-b5-size: 14px;
+  --text-b5-line-height: 22px;
+  --text-b5-spacing: -0.2px;
+  --text-b5-weight: 400;
+
+  /* Description (Pretendard) */
+
+  --text-d1-size: 14px;
+  --text-d1-line-height: 20px;
+  --text-d1-spacing: -0.2px;
+  --text-d1-weight: 500;
+
+  --text-d2-size: 12px;
+  --text-d2-line-height: 16px;
+  --text-d2-spacing: -0.2px;
+  --text-d2-weight: 500;
+
+  /* 👇 [수정] D3 스타일 값 변경 */
+  --text-d3-size: 10px;
+  --text-d3-line-height: 14px;
+  --text-d3-spacing: -0.2px;
+  --text-d3-weight: 500;
+
+  /* 👇 [추가] D4 스타일 변수 */
+  --text-d4-size: 8px;
+  --text-d4-line-height: 12px;
+  --text-d4-spacing: -0.2px;
+  --text-d4-weight: 500;
+}
+
+/* Title Utility Classes */
+.text-h1 {
+  font-family: var(--font-suite);
+  font-size: var(--text-h1-size);
+  line-height: var(--text-h1-line-height);
+  letter-spacing: var(--text-h1-spacing);
+  font-weight: var(--text-h1-weight);
+}
+
+.text-h2 {
+  font-family: var(--font-suite);
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-line-height);
+  letter-spacing: var(--text-h2-spacing);
+  font-weight: var(--text-h2-weight);
+}
+
+.text-h3 {
+  font-family: var(--font-suite);
+  font-size: var(--text-h3-size);
+  line-height: var(--text-h3-line-height);
+  letter-spacing: var(--text-h3-spacing);
+  font-weight: var(--text-h3-weight);
+}
+
+.text-h4 {
+  font-family: var(--font-suite);
+  font-size: var(--text-h4-size);
+  line-height: var(--text-h4-line-height);
+  letter-spacing: var(--text-h4-spacing);
+  font-weight: var(--text-h4-weight);
+}
+
+.text-h5 {
+  font-family: var(--font-suite);
+  font-size: var(--text-h5-size);
+  line-height: var(--text-h5-line-height);
+  letter-spacing: var(--text-h5-spacing);
+  font-weight: var(--text-h5-weight);
+}
+
+/* Subtitle Utility Classes */
+.text-s1 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s1-size);
+  line-height: var(--text-s1-line-height);
+  letter-spacing: var(--text-s1-spacing);
+  font-weight: var(--text-s1-weight);
+}
+
+.text-s2 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s2-size);
+  line-height: var(--text-s2-line-height);
+  letter-spacing: var(--text-s2-spacing);
+  font-weight: var(--text-s2-weight);
+}
+
+.text-s3 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s3-size);
+  line-height: var(--text-s3-line-height);
+  letter-spacing: var(--text-s3-spacing);
+  font-weight: var(--text-s3-weight);
+}
+
+.text-s4 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s4-size);
+  line-height: var(--text-s4-line-height);
+  letter-spacing: var(--text-s4-spacing);
+  font-weight: var(--text-s4-weight);
+}
+
+.text-s5 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s5-size);
+  line-height: var(--text-s5-line-height);
+  letter-spacing: var(--text-s5-spacing);
+  font-weight: var(--text-s5-weight);
+}
+
+.text-s6 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-s6-size);
+  line-height: var(--text-s6-line-height);
+  letter-spacing: var(--text-s6-spacing);
+  font-weight: var(--text-s6-weight);
+}
+
+/* Body Utility Classes */
+.text-b1 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-b1-size);
+  line-height: var(--text-b1-line-height);
+  letter-spacing: var(--text-b1-spacing);
+  font-weight: var(--text-b1-weight);
+}
+
+.text-b2 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-b2-size);
+  line-height: var(--text-b2-line-height);
+  letter-spacing: var(--text-b2-spacing);
+  font-weight: var(--text-b2-weight);
+}
+
+.text-b3 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-b3-size);
+  line-height: var(--text-b3-line-height);
+  letter-spacing: var(--text-b3-spacing);
+  font-weight: var(--text-b3-weight);
+}
+
+.text-b4 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-b4-size);
+  line-height: var(--text-b4-line-height);
+  letter-spacing: var(--text-b4-spacing);
+  font-weight: var(--text-b4-weight);
+}
+
+.text-b5 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-b5-size);
+  line-height: var(--text-b5-line-height);
+  letter-spacing: var(--text-b5-spacing);
+  font-weight: var(--text-b5-weight);
+}
+
+/* Description Utility Classes */
+/* Description Utility Classes */
+.text-d1 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-d1-size);
+  line-height: var(--text-d1-line-height);
+  letter-spacing: var(--text-d1-spacing);
+  font-weight: var(--text-d1-weight);
+}
+
+.text-d2 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-d2-size);
+  line-height: var(--text-d2-line-height);
+  letter-spacing: var(--text-d2-spacing);
+  font-weight: var(--text-d2-weight);
+}
+
+/* 👇 [수정] D3 유틸리티 클래스 (내용은 변경 없음, 변수 값만 수정됨) */
+.text-d3 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-d3-size);
+  line-height: var(--text-d3-line-height);
+  letter-spacing: var(--text-d3-spacing);
+  font-weight: var(--text-d3-weight);
+}
+
+/* 👇 [추가] D4 유틸리티 클래스 */
+.text-d4 {
+  font-family: var(--font-pretendard);
+  font-size: var(--text-d4-size);
+  line-height: var(--text-d4-line-height);
+  letter-spacing: var(--text-d4-spacing);
+  font-weight: var(--text-d4-weight);
+}
